@@ -3,4 +3,10 @@
   width: 500px;
   border: solid 2px;
   display: flex;
+  flex-direction: column;
+}
+
+.row-wrapper {
+  border: solid red 1px;
+  flex: 1;
 }
