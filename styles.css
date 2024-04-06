@@ -7,6 +7,12 @@
 }
 
 .row-wrapper {
-  border: solid red 1px;
+  border: solid green 1px;
+  flex: 1;
+  display: flex;
+}
+
+.square {
+  border: solid blue 1px;
   flex: 1;
 }
