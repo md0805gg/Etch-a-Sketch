@@ -11,9 +11,10 @@ for (let i = 0; i <=15; i++) {
   }
 };
 
-hoverOnSquare = () => {
-  const square = document.querySelector('.square');
-  square.setAttribute("style", "color: red; background: green;");
-};
-
-
+const squares = document.querySelectorAll('.square');
+squares.forEach(square => {
+  square.addEventListener('mouseover', () => 
+  {
+    square.setAttribute("style", "color: red; background: green;")
+  });
+});
