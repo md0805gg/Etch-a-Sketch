@@ -10,3 +10,10 @@ for (let i = 0; i <=15; i++) {
     rowWrapper.appendChild(square);
   }
 };
+
+hoverOnSquare = () => {
+  const square = document.querySelector('.square');
+  square.setAttribute("style", "color: red; background: green;");
+};
+
+
