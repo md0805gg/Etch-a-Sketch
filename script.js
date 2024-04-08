@@ -13,11 +13,11 @@ for (let i = 0; i <=15; i++) {
 
 const squares = document.querySelectorAll('.square');
 
-const funct = (square) => {
+const colorSquare = (square) => {
   square.addEventListener('mouseover', () => 
   {
     square.setAttribute("style", "color: red; background: green;")
   });
 }
 
-squares.forEach(funct);
+squares.forEach(colorSquare);
