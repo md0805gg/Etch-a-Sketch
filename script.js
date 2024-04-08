@@ -12,9 +12,12 @@ for (let i = 0; i <=15; i++) {
 };
 
 const squares = document.querySelectorAll('.square');
-squares.forEach(square => {
+
+const funct = (square) => {
   square.addEventListener('mouseover', () => 
   {
     square.setAttribute("style", "color: red; background: green;")
   });
-});
+}
+
+squares.forEach(funct);
