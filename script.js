@@ -12,7 +12,6 @@ for (let i = 0; i <=15; i++) {
 };
 
 const squares = document.querySelectorAll('.square');
-//const square = document.querySelector('.square');
 
 const clearGrid = () => {
   while (container.firstChild) {
