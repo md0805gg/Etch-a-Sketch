@@ -15,9 +15,9 @@ const squares = document.querySelectorAll('.square');
 //const square = document.querySelector('.square');
 
 const clearGrid = () => {
-    while (container.firstChild) {
-        container.removeChild(container.firstChild);
-    }
+  while (container.firstChild) {
+      container.removeChild(container.firstChild);
+  }
 }
 
 clearGrid();
