@@ -19,7 +19,9 @@ const clearGrid = () => {
   }
 }
 
-clearGrid();
+const button = document.querySelector('button');
+
+button.addEventListener('click', clearGrid);
 
 const colorSquare = (square) => {
   square.addEventListener('mouseover', () => 
