@@ -32,13 +32,12 @@ const colorSquare = (element) => {
 
 squares.forEach(colorSquare);
 
-
-
 const button = document.querySelector('button');
 
 const sequence = () => {
   clearGrid();
   newGrid(5);
+  const squares = document.querySelectorAll('.square');
   squares.forEach(colorSquare);
 }
 
