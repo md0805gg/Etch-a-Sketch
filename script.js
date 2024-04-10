@@ -23,17 +23,23 @@ const clearGrid = () => {
   }
 }
 
-const button = document.querySelector('button');
-
-button.addEventListener('click', clearGrid);
-
-
-
-const colorSquare = (square) => {
-  square.addEventListener('mouseover', () => 
+const colorSquare = (element) => {
+  element.addEventListener('mouseover', () => 
   {
-    square.setAttribute("style", "color: red; background: green;")
+    element.setAttribute("style", "color: red; background: green;")
   });
 }
 
 squares.forEach(colorSquare);
+
+
+
+const button = document.querySelector('button');
+
+const sequence = () => {
+  clearGrid();
+  newGrid(5);
+  squares.forEach(colorSquare);
+}
+
+button.addEventListener('click', sequence);
