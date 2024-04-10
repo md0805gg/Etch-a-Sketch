@@ -35,8 +35,9 @@ squares.forEach(colorSquare);
 const button = document.querySelector('button');
 
 const sequence = () => {
+  let inputValue = prompt('Please provide a number that will define a new grid dimession');
   clearGrid();
-  newGrid(5);
+  newGrid(inputValue);
   const squares = document.querySelectorAll('.square');
   squares.forEach(colorSquare);
 }
