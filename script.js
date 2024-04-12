@@ -35,10 +35,10 @@ squares.forEach(colorSquare);
 const button = document.querySelector('button');
 
 const sequence = () => {
-  let inputValue = prompt('Please provide a number that will define a new grid dimession');
+  let inputValue = prompt('Please provide a number that will define a new grid dimension');
   if (inputValue > 100) {
     alert('alert');
-    inputValue = prompt('Please provide a number that will define a new grid dimession');
+    inputValue = prompt('Please provide a number that will define a new grid dimension');
   }
   clearGrid();
   newGrid(inputValue);
