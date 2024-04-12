@@ -36,6 +36,10 @@ const button = document.querySelector('button');
 
 const sequence = () => {
   let inputValue = prompt('Please provide a number that will define a new grid dimession');
+  if (inputValue > 100) {
+    alert('alert');
+    inputValue = prompt('Please provide a number that will define a new grid dimession');
+  }
   clearGrid();
   newGrid(inputValue);
   const squares = document.querySelectorAll('.square');
