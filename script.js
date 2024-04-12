@@ -23,10 +23,17 @@ const clearGrid = () => {
   }
 }
 
+function getRandomInt(min, max) {
+  const minCeiled = Math.ceil(min);
+  const maxFloored = Math.floor(max);
+  return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
+};
+
 const colorSquare = (element) => {
   element.addEventListener('mouseover', () => 
   {
-    element.setAttribute("style", "background: black;")
+    element.setAttribute("style", `background: 
+    rgb(${getRandomInt(0, 256)},${getRandomInt(0, 256)},${getRandomInt(0, 256)});`)
   });
 }
 
