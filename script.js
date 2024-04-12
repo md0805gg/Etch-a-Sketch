@@ -26,7 +26,7 @@ const clearGrid = () => {
 const colorSquare = (element) => {
   element.addEventListener('mouseover', () => 
   {
-    element.setAttribute("style", "color: red; background: green;")
+    element.setAttribute("style", "background: black;")
   });
 }
 
