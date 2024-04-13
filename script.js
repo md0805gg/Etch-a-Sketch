@@ -1,4 +1,6 @@
 const container = document.querySelector('.container');
+const button = document.querySelector('button');
+const defaultGrid = 16;
 
 const newGrid = (inputValue) => {
   for (let i = 0; i < inputValue; i++) {
@@ -13,7 +15,7 @@ const newGrid = (inputValue) => {
   };
 }
 
-newGrid(16);
+newGrid(defaultGrid);
 
 const squares = document.querySelectorAll('.square');
 
@@ -39,8 +41,6 @@ const colorSquare = (element) => {
 
 squares.forEach(colorSquare);
 
-const button = document.querySelector('button');
-
 const promptRequest = () => {
   let inputValue = prompt(`Please provide a single number that will define a new grid dimensions.\nMaximum number is 100.`);
   if (inputValue > 100) {
@@ -54,11 +54,11 @@ const promptRequest = () => {
   return inputValue;
 }
 
-const sequence = () => {
+const changeGridSize = () => {
   clearGrid();
   newGrid(promptRequest());
   const squares = document.querySelectorAll('.square');
   squares.forEach(colorSquare);
 }
 
-button.addEventListener('click', sequence);
+button.addEventListener('click', changeGridSize);
