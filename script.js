@@ -41,18 +41,22 @@ squares.forEach(colorSquare);
 
 const button = document.querySelector('button');
 
-const sequence = () => {
+const promptRequest = () => {
   let inputValue = prompt(`Please provide a single number that will define a new grid dimensions.\nMaximum number is 100.`);
   if (inputValue > 100) {
     alert('Maximum number is 100.');
-    inputValue = prompt(`Please provide a single number that will define a new grid dimensions.\nMaximum number is 100.`);
+    promptRequest();
   }
   if (isNaN(inputValue)) {
     alert('Input value has to be a number.');
-    inputValue = prompt(`Please provide a single number that will define a new grid dimensions.\nMaximum number is 100.`);
+    promptRequest();
   }
+  return inputValue;
+}
+
+const sequence = () => {
   clearGrid();
-  newGrid(inputValue);
+  newGrid(promptRequest());
   const squares = document.querySelectorAll('.square');
   squares.forEach(colorSquare);
 }
