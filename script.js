@@ -51,6 +51,10 @@ const promptRequest = () => {
     alert('Input value has to be a number.');
     return promptRequest();
   }
+  if (inputValue == null || inputValue == undefined){
+    alert('Input value has to be a number.');
+    return promptRequest();
+  }
   return inputValue;
 }
 
