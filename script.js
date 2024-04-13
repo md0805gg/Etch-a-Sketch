@@ -43,10 +43,8 @@ const button = document.querySelector('button');
 
 const promptRequest = () => {
   let inputValue = prompt(`Please provide a single number that will define a new grid dimensions.\nMaximum number is 100.`);
-  console.log(inputValue);
   if (inputValue > 100) {
     alert('Maximum number is 100.');
-    console.log(inputValue);
     return promptRequest();
   }
   if (isNaN(inputValue)) {
