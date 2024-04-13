@@ -54,11 +54,15 @@ const promptRequest = () => {
   return inputValue;
 }
 
+const colorSquares = () => {
+  const squares = document.querySelectorAll('.square');
+  squares.forEach(colorSquare);
+}
+
 const changeGridSize = () => {
   clearGrid();
   newGrid(promptRequest());
-  const squares = document.querySelectorAll('.square');
-  squares.forEach(colorSquare);
+  colorSquares();
 }
 
 button.addEventListener('click', changeGridSize);
