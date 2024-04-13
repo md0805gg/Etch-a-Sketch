@@ -44,8 +44,8 @@ const button = document.querySelector('button');
 const sequence = () => {
   let inputValue = prompt(`Please provide a number that will define a new grid dimensions.\nMaximum number is 100.`);
   if (inputValue > 100) {
-    alert('alert');
-    inputValue = prompt('Please provide a number that will define a new grid dimension');
+    alert('Maximum number is 100.');
+    inputValue = prompt(`Please provide a number that will define a new grid dimensions.\nMaximum number is 100.`);
   }
   clearGrid();
   newGrid(inputValue);
