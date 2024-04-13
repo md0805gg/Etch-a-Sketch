@@ -32,7 +32,7 @@ function getRandomInt(min, max) {
 const colorSquare = (element) => {
   element.addEventListener('mouseover', () => 
   {
-    element.setAttribute("style", `background: 
+    element.setAttribute('style', `background: 
     rgb(${getRandomInt(0, 256)},${getRandomInt(0, 256)},${getRandomInt(0, 256)})`);
   });
 }
