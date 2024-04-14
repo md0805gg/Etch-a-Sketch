@@ -47,11 +47,7 @@ const promptRequest = () => {
     alert('Maximum number is 100.');
     return promptRequest();
   }
-  if (isNaN(inputValue)) {
-    alert('Input value has to be a number.');
-    return promptRequest();
-  }
-  if (inputValue == null || inputValue == undefined){
+  if (isNaN(inputValue) || inputValue == null || inputValue == undefined) {
     alert('Input value has to be a number.');
     return promptRequest();
   }
